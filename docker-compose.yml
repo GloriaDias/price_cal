@@ -1,0 +1,45 @@
+version: "3"
+services:
+
+  react_app:
+    container_name: react_app
+    image: pricecalc-frontend
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    restart: always
+   
+  node_server:
+     container_name: node_server
+     image: pricecal-backend
+     build: ./backend 
+     ports:
+       - "3001:3001"
+     environment:
+      #- EXTERNAL_PORT=3001
+      - PGUSER=root
+      - PGPASSWORD=root
+      - PGDATABASE=UnionArtSchool
+      - PGHOST=db
+     depends_on:
+       - db
+     restart: always
+
+  db:
+     container_name: postgress_db
+     image: postgres
+     environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: UnionArtSchool
+      ports: "5432:5432"
+     restart: always
+  pgadmin:
+    container_name: pgadmin4_container
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: root
+    ports:
+      - "5050:80"
