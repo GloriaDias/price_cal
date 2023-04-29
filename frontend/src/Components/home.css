@@ -1,0 +1,163 @@
+body{font-family: 'candara';}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:30px;
+}
+
+.links_countainer{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-around;
+}
+.items{
+   color: black;
+   font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.items_login{
+    color: #8A52F5;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+
+}
+
+.logo
+{
+    width: 30px;
+    height: 30px;
+    margin-right: auto;
+    margin-left: 50px;
+}
+
+.CartButton
+{
+    background-color: #8A52F5;
+    color: white;
+    border:none;
+    width:140px;
+    height:45px;
+    border-radius: 5px;
+}
+
+.CartButton >  p
+{
+    color: white; 
+    font-family: 'candara';
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+hr.d{border: 1px solid rgb(230, 229, 229);}
+
+.main
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top:1%;  
+    margin-bottom:1%;
+    margin-left:10%;  
+
+}
+
+h1
+{
+    font-size: 67px;
+    font-weight: bold;
+    margin-top: 20px;              
+    
+}
+
+.browseCoursesButton
+{
+    border:none;
+    width: 250px;
+    height: 60px;
+    background-color:#8A52F5;
+    color:white; 
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-top:30px;            
+    margin-bottom:30px;        
+    font-family: 'candara';
+    font-size: 15px;
+    font-weight:bold;    
+}
+
+p{color:rgb(136, 134, 134);}
+
+.row2
+{
+    margin-top:3%;
+    text-align: center;
+    vertical-align: middle; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.col-3
+{
+    width: 20%;
+    text-align: center;
+    vertical-align: middle; 
+    justify-content: center;
+    align-items: center;
+}
+
+h3
+{
+    font-size:20px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle; 
+    justify-content: center;
+    align-items: center;
+
+}
+
+h4
+{
+    margin-top:10px;
+    font-size: 17px;
+    font-weight:bold;
+    text-align: center;
+    vertical-align: middle; 
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+@media (max-width: 767px) {
+    .cart-icon {
+      display: block;
+    }
+    .CartButton {
+        display: none;
+      }
+  }
+  
+  @media (min-width: 768px) {
+    .cart-icon {
+      display: none;
+    }
+    .CartButton {
+        display: block;
+      }
+  }
+

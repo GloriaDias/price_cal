@@ -1,0 +1,30 @@
+.lesson {
+    display: flex;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+.first {
+    width: 35%;
+}
+.second{
+    width: 65%;
+}
+.imgLesson{
+    width: 90%;
+    height: 100%;
+}
+.dropdown{
+    background-color: rgba(211, 211, 211, 0.493);
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    height: 50px;
+}
+.cartButton{
+    background-color: #8A52F5;
+    color: white;       
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 150px;
+}

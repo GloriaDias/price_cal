@@ -1,0 +1,245 @@
+body{font-family: 'candara';}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:30px;
+}
+
+.links_countainer{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-around;
+    font-family: 'candara';
+}
+.items{
+   color: black;
+   font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.items_login{
+    color: #8A52F5;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+
+}
+
+.logo
+{
+    width: 30px;
+    height: 30px;
+    margin-right: auto;
+    margin-left: 50px;
+}
+
+.CartButton
+{
+    background-color: #8A52F5;
+    color: white;
+    border:none;
+    width:140px;
+    height:45px;
+    border-radius: 5px;
+}
+
+.CartButton >  p
+{
+    color: white; 
+    font-family: 'candara';
+    font-size: 15px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+hr.d{border: 1px solid rgb(230, 230, 230);}
+
+.row
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top:50px;    
+
+}
+
+h1
+{
+    font-size: 67px;
+    font-weight: bold;
+    margin-top: 20px;              
+    
+}
+
+.browseCoursesButton
+{
+    border:none;
+    width: 250px;
+    height: 60px;
+    background-color:#8A52F5;
+    color:white; 
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-top:30px;            
+    margin-bottom:30px;        
+    font-family: 'candara';
+    font-size: 15px;
+    font-weight:lighter;    
+}
+
+p{color:rgb(136, 134, 134);}
+
+.row2
+{
+    margin-top:6%;
+    text-align: center;
+    vertical-align: middle; 
+    justify-content: center;
+    align-items: center;
+}
+.signup{
+    border: solid;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+.signin{
+   color:#8A52F5;
+   margin-left: 10px;
+   
+}
+.signin > h1{
+    color:#8A52F5;
+    margin-top: 40px; 
+    margin-bottom: 20px;
+}
+
+.signin > a {
+    color:#8A52F5; 
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold; 
+}
+.signinButton{
+    background-color: #8A52F5;
+    color: white;
+    border:none;
+    width:140px;
+    height:45px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-family: 'candara';
+}
+.inner-div{
+    text-align: center;
+    padding-top: 30px;
+}
+.inner-div > button{
+    margin-left: 40px;
+}
+
+.cancel{
+    background-color: #898197;
+    color: white;
+    border:none;
+    width:140px;
+    height:45px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-family: 'candara';
+}
+.container{
+    width: 40% !important;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+
+.lesson{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 30px 0px 30px;
+  }
+  .lesson > div > img{
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  .lesson > div > div > p{
+    color: grey;
+    font-weight: bold;
+    margin-top: -15px;
+  }
+
+  .cartSummary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cartSummary > p{
+    margin-left: 20px;
+    font-weight: 700;
+  }
+  .cartSummary > h4{
+    margin-left: 20px;
+    color: grey;
+    font-weight: 700;
+  }
+
+  .cartSummaryTitle{
+    padding-right: 60px;
+  }
+  .cartSummaryTitle > h2{
+    margin-right: 150px;
+  }
+  .cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+.col-md-2
+{
+  padding-top: 20px;
+  margin-right: 15px;
+  height:50px;
+}
+
+select
+{
+  text-align: center;
+  font-size:14px;
+  width: 170px;
+  height:35px;
+  border-radius: 7px;
+  font-family: 'candara'
+}
+
+@media (max-width: 767px) {
+    .cart-icon {
+      display: block;
+    }
+    .CartButton {
+        display: none;
+      }
+  }
+  
+  @media (min-width: 768px) {
+    .cart-icon {
+      display: none;
+    }
+    .CartButton {
+        display: block;
+      }
+  }
